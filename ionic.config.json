@@ -1,0 +1,7 @@
+{
+  "name": "MaMapMonde",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
