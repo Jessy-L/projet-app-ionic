@@ -35,6 +35,15 @@ const routes: Routes = [
     path: 'password-reset',
     loadChildren: () => import('./password-reset/password-reset.module').then( m => m.PasswordResetPageModule)
   },
+  {
+    path: 'add-friend',
+    loadChildren: () => import('./add-friend/add-friend.module').then( m => m.AddFriendPageModule)
+  },
+  {
+    path: 'all-friends',
+    loadChildren: () => import('./all-friends/all-friends.module').then( m => m.AllFriendsPageModule)
+  },
+
 ];
 
 @NgModule({

@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>dashboard</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
-  <ion-button type="submit" (click)="authService.SignOut()" expand="block">Logout</ion-button>
+
+  <div class="fs-3 text-center m-3" color="primary">
+    Bonjour {{user.displayName}}
+  </div>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Pseudo</ion-label>
+    <ion-input type="text" id="pseudo" value="{{user.displayName}}" required></ion-input>
+  </ion-item>
+
+
+  <ion-item lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" id="email" value="{{user.email}}" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Nouveau mot de passe</ion-label>
+    <ion-input type="password" id="password" placeholder="***********" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Confirmer le nouveau mot de passe</ion-label>
+    <ion-input type="password" id="confirmPassword" placeholder="***********" required></ion-input>
+  </ion-item>
+
+  <div class="mt-5">
+    <ion-button type="submit" (click)="extractDataInput()" expand="block">MODIFIER</ion-button>
+    <ion-button type="submit" (click)="authService.SignOut()" expand="block">DECONNEXION</ion-button>
+  </div>
+
 </ion-content>

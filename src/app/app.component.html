@@ -22,13 +22,27 @@
           <ion-nav-link class="nav-link" (click)="closeMenu()" routerLink="/">Accueil</ion-nav-link>
         </ion-item>
 
-        <ion-item>
-          <ion-nav-link  class="nav-link" (click)="closeMenu()" routerLink="/login">Connexion</ion-nav-link>
-        </ion-item>
+        {{isLoggedIn}}
 
-        <ion-item>
-          <ion-nav-link class="nav-link" (click)="closeMenu()" routerLink="/register">Inscription</ion-nav-link>
-        </ion-item>
+        <ng-container *ngIf=" AuthenticationService.isLoggedIn ; else elseTemplate ">
+
+          <ion-item>
+            <ion-nav-link class="nav-link" (click)="closeMenu()" routerLink="/dashboard">Mon compte</ion-nav-link>
+          </ion-item>
+
+        </ng-container>
+
+        <ng-template #elseTemplate>
+
+           <ion-item>
+            <ion-nav-link  class="nav-link" (click)="closeMenu()" routerLink="/login">Connexion</ion-nav-link>
+          </ion-item>
+
+          <ion-item>
+            <ion-nav-link class="nav-link" (click)="closeMenu()" routerLink="/register">Inscription</ion-nav-link>
+          </ion-item>
+
+        </ng-template>
 
       </ion-list>
     </ion-content>
@@ -45,21 +59,27 @@
 
       <ion-title>MaMapMonde</ion-title>
 
-      <div class="btn" id="btn-three-dot" color="primary" slot="end" (click)="dropdown()">
-        <span class="iconify fs-2 text-white" data-icon="bx:dots-vertical-rounded"></span>
-      </div>
-
+      <ng-container *ngIf=" AuthenticationService.isLoggedIn ">
+        <div class="btn" id="btn-three-dot" color="primary" slot="end" (click)="dropdown()">
+          <span class="iconify fs-2 text-white" data-icon="bx:dots-vertical-rounded"></span>
+        </div>
+      </ng-container>
+      
     </ion-toolbar>
   </ion-header>
 
-  <div id="dropdown-custom" color="primary">
+  <ng-container *ngIf=" AuthenticationService.isLoggedIn ">
+
+    <div id="dropdown-custom" color="primary">
 
       <ul class="dropdown-menu">
         <button routerLink="setting" class="dropdown-item">Paramètre</button>
         <button routerLink="dashboard" class="dropdown-item">Mon compte</button>
       </ul>
 
-  </div>
+    </div>
+
+  </ng-container>
 
   <ion-router-outlet id="main"></ion-router-outlet>
 
