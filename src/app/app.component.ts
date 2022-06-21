@@ -11,8 +11,6 @@ import { getAnalytics } from "firebase/analytics";
 })
 export class AppComponent {
 
-
-
   constructor() {
 
     const firebaseConfig = {
@@ -41,6 +39,10 @@ export class AppComponent {
     const content = (document.getElementById('dropdown-custom') as HTMLDivElement).style ;
     content.display != "none" ? content.display = "none" : content.display = "flex"
 
+  }
+
+  closeMenu(){
+    document.getElementById('btn-cross').click()
   }
 
 }

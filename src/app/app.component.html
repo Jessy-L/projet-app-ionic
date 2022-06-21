@@ -3,34 +3,46 @@
   <ion-menu side="start" menuId="first" contentId="main">
     <ion-header>
       <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
+
+        <ion-title>Le menu</ion-title>
 
         <ion-buttons slot="end">
-          <ion-menu-button>
+          <ion-menu-button id="btn-cross">
             <span class="iconify" data-icon="akar-icons:cross"></span>
           </ion-menu-button>
         </ion-buttons>
 
       </ion-toolbar>
     </ion-header>
+
     <ion-content>
+
       <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+        <ion-item>
+          <ion-nav-link class="nav-link" (click)="closeMenu()" routerLink="/">Accueil</ion-nav-link>
+        </ion-item>
+
+        <ion-item>
+          <ion-nav-link  class="nav-link" (click)="closeMenu()" routerLink="/login">Connexion</ion-nav-link>
+        </ion-item>
+
+        <ion-item>
+          <ion-nav-link class="nav-link" (click)="closeMenu()" routerLink="/register">Inscription</ion-nav-link>
+        </ion-item>
+
       </ion-list>
     </ion-content>
   </ion-menu>
 
   <ion-header>
     <ion-toolbar color="primary">
+
       <ion-buttons slot="start">
         <ion-menu-button>
           <span class="iconify" data-icon="icon-park-outline:hamburger-button"></span>
         </ion-menu-button>
       </ion-buttons>
+
       <ion-title>MaMapMonde</ion-title>
 
       <div class="btn" id="btn-three-dot" color="primary" slot="end" (click)="dropdown()">
@@ -43,8 +55,8 @@
   <div id="dropdown-custom" color="primary">
 
       <ul class="dropdown-menu">
-        <button routerLink="parametre" class="dropdown-item">Paramètre</button>
-        <button routerLink="mon-compte" class="dropdown-item">Mon compte</button>
+        <button routerLink="setting" class="dropdown-item">Paramètre</button>
+        <button routerLink="dashboard" class="dropdown-item">Mon compte</button>
       </ul>
 
   </div>

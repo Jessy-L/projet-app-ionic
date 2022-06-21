@@ -23,3 +23,16 @@
 #main{
   margin-top: 56px;
 }
+
+.nav-link{
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.nav-link:hover{
+  opacity: 0.7;
+}

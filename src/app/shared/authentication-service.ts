@@ -59,7 +59,7 @@ export class AuthenticationService {
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
         window.alert(
-          'Password reset email has been sent, please check your inbox.'
+          'Un Mail pour changer votre mot de passe à était envoyé'
         );
       })
       .catch((error) => {
@@ -108,7 +108,7 @@ export class AuthenticationService {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
-      photoURL: user.photoURL,
+      position: user.position,
       emailVerified: user.emailVerified,
     };
     return userRef.set(userData, {

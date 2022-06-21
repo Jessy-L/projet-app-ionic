@@ -6,30 +6,26 @@
 
 <ion-content>
   <form>
-    
+
     <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
       <ion-input type="text" #email required></ion-input>
     </ion-item>
 
     <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
+      <ion-label position="floating">Mot de passe</ion-label>
       <ion-input type="password" #password required></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-      <ion-button type="submit" (click)="logIn(email, password)" expand="block">Login</ion-button>
+      <ion-button type="submit" (click)="logIn(email, password)" expand="block">CONNEXION</ion-button>
       </ion-col>
     </ion-row>
 
-    <ion-row>
-      <ion-col>
-        <ion-button expand="block" color="warning" [routerLink]="['/password-reset']">
-          Password Reset
-        </ion-button>
-      </ion-col>
-    </ion-row>
+    <a class="nav-link text-center mt3" [routerLink]="['/password-reset']" >
+      Mot de passe oublié
+    </a>
 
   </form>
 </ion-content>

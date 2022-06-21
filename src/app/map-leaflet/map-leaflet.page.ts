@@ -20,8 +20,8 @@ export class MapLeafletPage implements AfterContentInit {
       iconAnchor: [10, 41],
       popupAnchor: [2, -40],
       // specify the path here
-      iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
-      shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png"
+      iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/",
+      shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/"
     })
   };
 
@@ -32,7 +32,7 @@ export class MapLeafletPage implements AfterContentInit {
 
     var lonlat = this.GetPosition(coord)
 
-    console.log(lonlat)
+    console.log('[USER] => ' + lonlat)
 
     // return
 
@@ -60,6 +60,8 @@ export class MapLeafletPage implements AfterContentInit {
     this.map.on("click" , function(e){
 
       const newMarker = L.marker([e.latlng.lat, e.latlng.lng], this.markerIcon)
+
+      console.table(e.latlng)
 
       newMarker.addTo(stock)
 
