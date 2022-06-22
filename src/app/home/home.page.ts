@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import VectorSource from 'ol/source/vector';
+import VectorLayer from 'ol/layer/vector';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +23,7 @@ export class HomePage {
     }
 
   }
+
 
   markerSource = new ol.source.Vector();
   stockPositionOnClick : any;
@@ -47,22 +50,38 @@ export class HomePage {
 
     });
 
+    console.log(position.coords.longitude, position.coords.latitude)
+
   }
 
   AddMarker(){
 
-    this.map.on("click", (args) => {
-
-      this.stock = this.OnClickGetPosition(args)
 
 
-      var markers = new ol.layer.markers( "Markers" );
-      this.map.addLayer(markers);
+    var source = new VectorSource({});
+    var layer = new VectorLayer({ source: source});
+        this.map.addLayer(layer );
 
-      markers.addMarker(new ol.marker(this.stock));
 
-
+    var marker = new ol.Feature({
+      geometry: new ol.geom.Point([0,0]) // dont worry about coordinate type 0,0 will be in west coast of africa
     });
+
+    source.addFeature(marker);
+
+    // this.map.on("click", (args) => {
+
+
+    //   console.log(args)
+
+    //   this.stock = this.OnClickGetPosition(args)
+
+    //   console.log(this.stock)
+
+    //   console.log(args)
+
+
+    // });
   }
 
 

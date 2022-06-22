@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mamapmonde",
+  "private_key_id": "a5b254a74cf477f896c86b3e2f26f0cd87644612",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+aJ+h0JVCMwjM\nAYTrT+fI1Jm6MpXG2utsTaivbXxXQ1gxmjEUBeiW51cfH0dV6XbdsOkXT5zDCpUK\nMERZXgizpk/2F4UdyEt1Z87L8zGtlHrqkDMTl11iDUMg1w/w3ZNPhTOKZcvFei63\nK63WuOK/qPlkdxp+OQmoC97PVkxrCMuzCNBmFsy5E32ALmYF3FypkXLTiciH+/zc\nAURoAPytsLDh8cGRzlK8x/YRjGl/+kb4qek5TUpDn+vG35BI5YH8Nkj4xX8lf68c\ndy49G+iXPWkX/KsYi9cRrAPD3CA7/K4xco5lwSVDXtezwg0XOIpFutoz+HUOPVKP\nrAXAYZO5AgMBAAECggEANgAhCbjIo+oqXAUwR7Y1M6lL4dk3zhpHO0N5DCueYHc6\ne3LR6W5VjPqWJD7wMcbRDcV/Dbvn5w7Ivwd6UugOyrhnpBD+kTg9YlIq/X9+vs5F\n3+E+gxdiBg1h1N35aOPGQ/6wY9dD58Ejn5I1LpjnwdhvxlTbACI4AV9AdQfyC0aJ\nWHzQ0nEIeI5YAkXjTzljjE9p1LiNUuOA+yx5xB+mm90MXYohube7lMv6/AIHPFQA\nog1Mfg+ibq9zJfXI7D1xoGDEixbrsD635dCzYurVWiffgrjGNhBy6jNH97ifbeHH\nrzLTrqrkb7BiUT3AY9//4p2j45exeiz/AnayL4H2QwKBgQDrFfJeSkRxTcpQ9fbV\n4sasyW+1VhVtvdIBJeDkw6C9uOlmIipRdnb/9+EZOoBkW/AwtbWSIBURMKc1Abal\nX+gvzP80mH8N8uKi04RHEOl9JbDzZZoXCDnJZlYIXLs1GcTAABQjRBv16I7op+Cy\nNgQMa1g9EEpG49+72aOTv7gLFwKBgQDPWSloUbEN3BC3PKA0obVE6kbGaBDjn2um\nYCrCdVAyWKzQ+Fb3nmxpyL5mOSz2eVsN/WZHxwnlZWS2uSL0kKC84gCyPgcriUi7\nX1fU/XXtLr6QssYQmTgqoDmSb3lbDLcbR847nrpKlW114vqnrbw35y/w99vrw/sp\nQtC6zmFZrwKBgQCA0LLRFfLw/wY4XL7Xrn7dGTfb7oKpcpULSf00fTmsHBHQhDIa\nF0bXtbUjhNnrpDE2D6uhmXDRzY4hzoGNlsL8xmClKlachxXG0Q4vfsXibG/Mv0Sz\nEC/R+wBzbpSqYSddae2e8Wg81CTSuYK3RD/tqjhcpXt94smq/nPStwAbGwKBgQCF\nZZR5M81X4FO0v0FGex62xo5gCQWMm7zTHh2EW5sLuPb9vjedOQQAjpDIDVK7A1os\nRvFtjkT0m2XPFI7DjuSKgE/4XGWagckUGwPT2Hjs7dzWFN3OQfTbn5dKeYM2q5iF\n6Y1p1/V8FGSGqk+eXuyvfoHeYmfPZ5eHdR/6ftosqwKBgFog1ytUgRuER0ubsbnC\nzZ5FFXOlJHnTJdjO2biEKMbiiklkLmPm3rompyekkc0RFhv+y7jgY4N5m31GIRt9\n8/cMOrMwqJzCrlEUW9dNQZdFPvqBqUxyBQd/YRgzpXlIS9qd3iTNDAZK0Q7FSpC3\nbz0zYhMyS8TghYg9Pe+Yg0Fz\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-k5xav@mamapmonde.iam.gserviceaccount.com",
+  "client_id": "107844694757939950970",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-k5xav%40mamapmonde.iam.gserviceaccount.com"
+}

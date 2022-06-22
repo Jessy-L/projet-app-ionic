@@ -44,7 +44,7 @@ export class AppComponent {
     ngOnInit(): void {
       this.dropdown()
 
-      // this.isLoggedIn = 
+      // this.isLoggedIn =
 
       console.log(this.isLoggedIn)
 

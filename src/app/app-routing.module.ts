@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'map-leaflet',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -36,13 +36,10 @@ const routes: Routes = [
     loadChildren: () => import('./password-reset/password-reset.module').then( m => m.PasswordResetPageModule)
   },
   {
-    path: 'add-friend',
-    loadChildren: () => import('./add-friend/add-friend.module').then( m => m.AddFriendPageModule)
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
-  {
-    path: 'all-friends',
-    loadChildren: () => import('./all-friends/all-friends.module').then( m => m.AllFriendsPageModule)
-  },
+
 
 ];
 
